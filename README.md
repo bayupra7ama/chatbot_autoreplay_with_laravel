@@ -93,11 +93,13 @@ Pastikan sistem telah terpasang:
 
 ### 👤 User
 
-![User View](images/user-view.png)
+![User View](images/ui-user.png)
 
 ### 🛠️ Admin
 
-![Admin View](images/admin-view.png)
+![Admin View](images/admin1.png)
+![Admin View](images/admin2.png)
+![Admin View](images/admin3.png)
 
 > 📌 Simpan screenshot ke dalam folder `images/` lalu ganti sesuai nama file.
 
@@ -115,11 +117,3 @@ Pastikan sistem telah terpasang:
 ## 📜 Lisensi
 
 Proyek ini bersifat open-source dan tersedia di bawah lisensi [MIT](LICENSE).
-
-```
-
----
-
-Kamu tinggal paste ini ke file `README.md` di repo GitHub.  
-Mau saya bikinkan juga **contoh screenshot dummy** (gambar placeholder) supaya langsung tampil di `README.md` sebelum kamu punya screenshot asli?
-```
