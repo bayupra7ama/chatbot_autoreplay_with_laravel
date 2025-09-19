@@ -1,5 +1,3 @@
-
-````markdown
 # 🤖 Chatbot Auto-replay with Laravel
 
 **Lapor Infra** merupakan chatbot auto-replay yang digunakan untuk menangani laporan kendala jaringan di OPD Kota Pekanbaru.  
@@ -33,7 +31,7 @@ Pastikan sistem telah terpasang:
 2. **Install dependensi PHP** dengan Composer:
    ```bash
    composer install
-````
+
 
 3. **Atur konfigurasi `.env`** sesuai kebutuhan:
 
