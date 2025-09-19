@@ -1,61 +1,130 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+Oke siap 👍, ini saya kasih full isi **`README.md`** biar kamu tinggal **copas 1 file** langsung ke repo:
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+---
 
-## About Laravel
+````markdown
+# 🤖 Chatbot Auto-replay with Laravel
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+**Lapor Infra** merupakan chatbot auto-replay yang digunakan untuk menangani laporan kendala jaringan di OPD Kota Pekanbaru.  
+Proyek ini dikembangkan sebagai bagian dari **Magang di Dinas Komunikasi, Informatika, Statistik, dan Persandian Kota Pekanbaru (Februari – Juni 2025).**
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+---
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## 📌 Tentang
+Chatbot ini membantu:
+- 📡 Menangani laporan gangguan jaringan dari pengguna di OPD.
+- 💬 Memberikan auto-reply sesuai jenis kendala.
+- 🛠️ Menyediakan panel admin untuk mengelola laporan dan pengguna.
 
-## Learning Laravel
+---
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## ⚙️ Instruksi Instalasi
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+### 📋 Persyaratan Sistem
+Pastikan sistem telah terpasang:
+- PHP >= 8.2
+- Composer
+- MySQL
+- Node.js & NPM
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+---
 
-## Laravel Sponsors
+### 🚀 Langkah-langkah Instalasi
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+1. **Clone atau unzip project**, lalu buka di code editor (misalnya Visual Studio Code).
 
-### Premium Partners
+2. **Install dependensi PHP** dengan Composer:
+   ```bash
+   composer install
+````
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development/)**
-- **[Active Logic](https://activelogic.com)**
+3. **Atur konfigurasi `.env`** sesuai kebutuhan:
 
-## Contributing
+   ```env
+   APP_NAME=ChatBot
+   APP_URL=http://localhost:8000
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+   DB_CONNECTION=mysql
+   DB_HOST=127.0.0.1
+   DB_PORT=3306
+   DB_DATABASE=nama_database
+   DB_USERNAME=root
+   DB_PASSWORD=password
+   ```
 
-## Code of Conduct
+4. **Generate key aplikasi**:
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+   ```bash
+   php artisan key:generate
+   ```
 
-## Security Vulnerabilities
+5. **Migrasi & seeder database**:
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+   ```bash
+   php artisan migrate --seed
+   ```
 
-## License
+6. **Install frontend assets**:
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+   ```bash
+   npm install
+   npm run build
+   npm run dev
+   ```
+
+7. **Jalankan server lokal**:
+
+   ```bash
+   php artisan serve
+   ```
+
+   Akses aplikasi di browser:
+   👉 [http://127.0.0.1:8000](http://127.0.0.1:8000)
+
+8. **Tampilan Admin**
+   Akses di browser:
+   👉 [http://127.0.0.1:8000/admin](http://127.0.0.1:8000/admin)
+
+   Login menggunakan akun default:
+
+   ```
+   Email:    admin@example.com
+   Password: password
+   ```
+
+---
+
+## 🖼️ Tampilan Sistem
+
+### 👤 User
+
+![User View](images/user-view.png)
+
+### 🛠️ Admin
+
+![Admin View](images/admin-view.png)
+
+> 📌 Simpan screenshot ke dalam folder `images/` lalu ganti sesuai nama file.
+
+---
+
+## 👨‍💻 Author
+
+* **Bayu Pratama Agus Kurniawan**
+  📍 Teluk Belitung, Kepulauan Meranti, Riau
+  📧 [Email](mailto:bayupratamaaguskurniawan@gmail.com)
+  🔗 [LinkedIn](https://www.linkedin.com/in/bayu-pratama-agus-kurniawan/) | [GitHub](https://github.com/bayupra7ama)
+
+---
+
+## 📜 Lisensi
+
+Proyek ini bersifat open-source dan tersedia di bawah lisensi [MIT](LICENSE).
+
+```
+
+---
+
+Kamu tinggal paste ini ke file `README.md` di repo GitHub.  
+Mau saya bikinkan juga **contoh screenshot dummy** (gambar placeholder) supaya langsung tampil di `README.md` sebelum kamu punya screenshot asli?
+```
