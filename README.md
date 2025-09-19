@@ -1,6 +1,3 @@
-Oke siap 👍, ini saya kasih full isi **`README.md`** biar kamu tinggal **copas 1 file** langsung ke repo:
-
----
 
 ````markdown
 # 🤖 Chatbot Auto-replay with Laravel
